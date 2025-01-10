@@ -11,7 +11,7 @@ export let options = {
 
 export default function () {
   group("API uptime check", () => {
-    const response = http.get("https://todo-barkend-2adf9b3c79d3.herokuapp.com/todos/");
+    const response = http.get("https://todo-barkend-api-f523e469c18a.herokuapp.com/todos/");
     check(response, {
       "status code should be 200": (res) => res.status === 200,
     });
@@ -19,7 +19,7 @@ export default function () {
 
   let todoID;
   group("Create a Todo", () => {
-    const response = http.post("https://todo-barkend-2adf9b3c79d3.herokuapp.com/todos/", {
+    const response = http.post("https://todo-barkend-api-f523e469c18a.herokuapp.com/todos/", {
       task: "write k6 tests",
     });
     todoID = response.json()._id;
@@ -32,7 +32,9 @@ export default function () {
   });
 
   group("get a todo item", () => {
-    const response = http.get(`https://todo-app-barkend.herokuapp.com/todos/${todoID}`);
+    const response = http.get(
+      `https://todo-barkend-api-f523e469c18a.herokuapp.com/todos/${todoID}`
+    );
     check(response, {
       "status code should be 200": (res) => res.status === 200,
     });
