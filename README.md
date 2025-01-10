@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/CIRCLECI-GWP/performance-testing-with-k6/tree/main.svg?style=svg)](https://circleci.com/gh/CIRCLECI-GWP/performance-testing-with-k6/tree/main)
+[![CircleCI](https://circleci.com/gh/CIRCLECI-GWP/performance-testing-with-grafana-k6/tree/main.svg?style=svg)](https://circleci.com/gh/CIRCLECI-GWP/performance-testing-with-grafana-k6/tree/main)
 
 <p align="center"><img src="https://avatars3.githubusercontent.com/u/59034516"></p>
 
